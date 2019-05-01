@@ -1,0 +1,84 @@
+﻿@model OnlineSHProject.Models.Products
+
+@{
+    ViewBag.Title = "Add Products";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@*@using (Html.BeginForm())
+    {
+        @Html.EditorFor(model => model.TAGS, new { htmlAttributes = new { @class = "form-control" } })
+    }*@
+
+
+
+<div class="container">
+    <br />
+    <br />
+    <h2>Create Product</h2>
+    <div class="form-group col-md-6">
+        <form name="add_name" id="add_name" enctype="multipart/form-data" action="../Products/Create" method="post">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+            <div class="form-group">
+                <label for="productName">Product name</label>
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Product name" } })
+            </div>
+
+            <div class="form-group">
+                <label for="ProductImage">Product Image</label>
+                <input name="img" type="file" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                @Html.DropDownListFor(model => model.Category, OnlineSHProject.Models.Constant.cataSelectList, new { @class = "form-control" })
+            </div>
+            <div class="custom-control custom-checkbox mr-sm-2 my-4">
+                @Html.CheckBoxFor(model => model.Availability, new { @class = "custom-control-input", @id = "availability" })
+                <label class="custom-control-label" for="availability">Availability</label>
+            </div>
+            <div class="form-group">
+                <label for="productCode">Product code</label>
+                @Html.EditorFor(model => model.ProductCode, new { htmlAttributes = new { @class = "form-control", @placeholder = "Product code" } })
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", placeholder = "Price" } })
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control", placeholder = "Price" } })
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry date</label>
+                @Html.EditorFor(model => model.ExpireDate, new { htmlAttributes = new { @class = "form-control", placeholder = "Expiry date" } })
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" class="form-control" id="description" rows="3"></textarea>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dynamic_field">
+                    <tr>
+                        <td>
+                            <input type="text" name="name[]" placeholder="Enter attribute" class="form-control name_list" />
+                            <input type="text" placeholder="Enter value then press comma [ , ]" class="form-control add-tag" />
+                            <div class="tags values_list"></div>
+                        </td>
+                        <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" id="submit" class="btn btn-info" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

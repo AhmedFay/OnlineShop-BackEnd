@@ -1,0 +1,1365 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.btn:focus{
+    box-shadow: none;
+    border-radius: 0px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+
+/* scroll to top start */
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 2px;
+    z-index: 100;
+    color: #ffffff;
+    background-color: #1f4ba5;
+    opacity: 0.8;
+    border: 1px solid #ffffff;
+    transition-duration: 0.4s;
+    display: none;
+}
+.scroll-to-top:hover{
+    text-decoration: none;
+    line-height: 25px;
+    color: #ffffff;
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+/* scroll to top end */
+
+/* header start */
+.headerSection{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.theHead{
+    height: 36px;
+    background-color: #222222;
+}
+.theHead .headForm span{
+    line-height: 36px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #777777;
+}
+.theHead .headNavs .shoppingCart{
+    display: inline-block;
+}
+.theHead .headNavs .shoppingCart a{
+    display: inline-block;
+    line-height: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .shoppingCart a:hover{
+    text-decoration: none;
+    background-color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .shoppingCart a .badge{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    background-color: #fa3e3e;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount{
+    display: inline-block;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount a{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -4px;
+    border: 0px;
+    border-radius: 0px;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount .dropdown-toggle[aria-expanded="true"]{
+    background-color: #1f4ba5;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount .dropdown-menu{
+    border-radius: 0px;
+    min-width: auto;    
+}
+.theHead .headNavs .shoppingCart .dropdownAccount .dropdown-menu .dropdown-item{
+    font-size: 13px;
+    font-family: Montserrat;
+    color: #222222;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount .dropdown-menu .dropdown-item:hover{
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .shoppingCart .dropdownAccount .dropdown-menu .dropdown-divider{
+    margin: 0px;
+}
+.theHead .headNavs .registerNavs{
+    display: inline-block;
+}
+.theHead .headNavs .registerNavs a{
+    line-height: 36px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #999999;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .registerNavs > a{
+    margin-right: 20px;
+}
+.theHead .headNavs .registerNavs a:hover{
+    text-decoration: none;
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .registerNavs .dropdownSign{
+    display: inline-block;
+}
+.theHead .headNavs .registerNavs .dropdownSign a{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -4px;
+    border: 0px;
+}
+.theHead .headNavs .registerNavs .dropdownSign .dropdown-toggle[aria-expanded="true"]{
+    color: #1f4ba5;
+}
+.theHead .headNavs .registerNavs .dropdownSign .dropdown-menu{
+    border-radius: 0px;
+}
+.theHead .headNavs .registerNavs .dropdownSign .dropdown-menu input{
+    border-radius: 0px;
+}
+.theHead .headNavs .registerNavs .dropdownSign .dropdown-menu button{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #454647;
+    border: 2px solid #737373;
+    border-radius: 0px;
+    transition-duration: 0.4s;
+}
+.theHead .headNavs .registerNavs .dropdownSign .dropdown-menu button:hover{
+    background-color: #1f4ba5;
+    border-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+/* header end */
+
+
+/* navbar start */
+.navbar .navbar-brand{
+    font-size: 22px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+}
+.navbar .navbar-nav{
+    margin-top: 20px;
+}
+.navbar .nav-item .nav-link{
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .nav-link[aria-expanded="true"]{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .nav-link .nav-arrow{
+    font-size: 12px;
+    color: #ababab;
+    padding-left: 1px;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .nav-link:hover .nav-arrow{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .nav-link[aria-expanded="true"] .nav-arrow{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .dropdown-menu{
+    background-color: #f8f8f8;
+    border-radius: 0px;
+    border-width: 0px;
+    border-top: 3px solid #f7f7f7;
+    box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+}
+.navbar .nav-item .dropdown-menu h6{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #575153;
+}
+.navbar .nav-item .dropdown-menu a{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #969696;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .dropdown-menu a:hover{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.navbar .nav-item .dropdown-menu a:active{
+    background-color: transparent;
+}
+.navbar .nav-item .dropdown-menu .dropdownCover{
+    background-color: #222222;
+}
+.navbar .nav-item .dropdown-menu .dropdownCover h1{
+    width: 267px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 34px;
+    color: #ffffff;
+}
+.navbar .nav-item .dropdown-menu .dropdownCover p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #ffffff;
+}
+.searching{
+    position: relative;
+    margin-left: -1px;
+    width: 190px;
+}
+.navbar .searching input{
+    width: 190px;
+    height: 30px;
+    padding-right: 16px;
+	border-radius: 0px;
+	background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    transition-duration: 0.4s;
+}
+.navbar .searching input:focus{
+    background-color: #ffffff;
+    border-color: #8a8989;
+    transition-duration: 0.4s;
+}
+button.searchBtn{
+	position: absolute;
+    right: 1px;
+    top: 1px;
+	background-color: #f8f8f8;
+	color: #989898;
+	border: 1px solid transparent;
+    height: 28px;
+	border-radius: 0px;
+}
+button.searchBtn:hover{
+    color: #6e6060;
+}
+/* navbar end */
+
+
+/* cover start */
+.cover{
+    background-image: url("../img/cover.png");
+    height: 299px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.coverText h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.coverText h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+.coverText h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+/* cover end */
+
+/* main section start */
+.mainSection{
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.signUpDivider{
+    width: 1px;
+    height: auto;
+    margin: 5px 15px 0px 15px;
+    background-color: #eeeeee;
+}
+.mainSection .mainForm form label{
+    margin-right: auto;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #575153;
+}
+.mainSection .mainForm form input[type = text],
+.mainSection .mainForm form input[type = email],
+.mainSection .mainForm form input[type = password]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 35px;
+    line-height: 40px;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    transition-duration: 0.4s;
+}
+.mainSection .mainForm form input[type = text]:focus,
+.mainSection .mainForm form input[type = email]:focus,
+.mainSection .mainForm form input[type = password]:focus{
+    outline: 0px;
+    border-color: #ff3f2b;
+    transition-duration: 0.4s;
+}
+.mainSection .mainForm form input[type = submit]{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #454647;
+    border: 2px solid #737373;
+    transition-duration: 0.4s;
+}
+.mainSection .mainForm form input[type = submit]:hover{
+    background-color: #1f4ba5;
+    border-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.mainSection .mainForm form .forgotLink{
+    width: calc(100% - 137px);
+    text-align: right;
+}
+.mainSection .mainForm form .forgotLink a,
+.mainSection .mainForm form .privacyPolicy a{
+    font-size: 15px;
+    font-family: Roboto;
+    color: #4c6fb7;
+}
+.mainSection .mainForm form .forgotLink a:hover,
+.mainSection .mainForm form .privacyPolicy a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+.mainSection .mainForm form .privacyPolicy span{
+    font-size: 15px;
+    font-family: Roboto;
+    color: #4c6fb7;
+}
+.containerCheck{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.containerCheck .chText{
+    font-size: 15px;
+    font-family: Roboto;
+    color: #8e8c8c;
+    text-transform: none;
+}
+.containerCheck input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+.containerCheck:hover input ~ .checkmark{
+    background-color: #eee;
+}
+.containerCheck input:checked ~ .checkmark{
+    background-color: #1f4ba5;
+    border: #1f4ba5;
+}
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.containerCheck input:checked ~ .checkmark:after{
+    display: block;
+}
+.containerCheck .checkmark:after{
+    left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+/* main section end */
+
+/* main section of user account start */
+.userAccount.mainSection{
+    min-height: 700px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.userAccount.mainSection .my-account-bar{
+    background-color: #f8f8f8;
+}
+.userAccount.mainSection .hi-user p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    color: #232936;
+}
+.userAccount.mainSection .nav-pills a{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    color: #323743;
+}
+.userAccount.mainSection .nav-pills a:hover{
+    color: #333399;
+}
+.userAccount.mainSection .nav-pills a.active{
+    background-color: transparent;
+    color: #333399;
+}
+
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] h5{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #003199;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form label{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #000000;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form label span{
+    font-size: 18px;
+    color: red;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form input{
+    border-radius: 0px;
+    border: 1px solid #e7e7e7;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form input:focus{
+    outline: 0px;
+    border-color: #ff3f2b;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form button{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    letter-spacing: 1px;
+    border: 2px solid #737373;
+    background-color: transparent;
+    color: #454647;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form button:hover{
+    background-color: #1f4ba5;
+    border-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-personal-information] form button:focus{
+    outline: 0px;
+}
+
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] h5{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #003199;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table tr td{
+    vertical-align: middle;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table tr td:last-child{
+    text-align: right;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .productImg{
+    width: 77px;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .productText{
+    max-width: 190px;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .productText p{
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .productText span{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .cost{
+    font-size: 13px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .addFeedback{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 16px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    border: 2px solid #737373;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #454647;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .addFeedback:hover{
+    background-color: #1f4ba5;
+    border-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .modal-content{
+    border-radius: 0px;
+    background-color: #1f4ba5;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .modal-header{
+    border-radius: 0px;
+    background-color: #1f4ba5;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .modal-title{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .close{
+    color: #ffffff;
+    opacity: 1;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .close:hover,
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .close:focus{
+    opacity: 0.5;
+    outline: 0px;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .table .modal .modal-body{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(97, 73, 73);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: left;
+    background-color: #ffffff;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-order-history] .modal-body textarea{
+    resize: none;
+    border-radius: 0px;
+}
+.userAccount .rate {
+    float: left;
+    height: 46px;
+}
+.userAccount .rate:not(:checked) > input {
+    position:absolute;
+    top: 47px;
+    left: -5000px;
+}
+.userAccount .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.userAccount .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.userAccount .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.userAccount .rate:not(:checked) > label:hover,
+.userAccount .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.userAccount .rate > input:checked + label:hover,
+.userAccount .rate > input:checked + label:hover ~ label,
+.userAccount .rate > input:checked ~ label:hover,
+.userAccount .rate > input:checked ~ label:hover ~ label,
+.userAccount .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.userAccount.mainSection .tab-pane[id=v-pills-addresses] h5{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #003199;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-addresses] p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-addresses] form button{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    letter-spacing: 1px;
+    border: 2px solid #737373;
+    background-color: transparent;
+    color: #454647;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-addresses] form button:hover{
+    background-color: #1f4ba5;
+    border-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-addresses] form button:focus{
+    outline: 0px;
+}
+
+.userAccount.mainSection .tab-pane[id=v-pills-payment] h5{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #003199;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-payment] p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.userAccount.mainSection .tab-pane[id=v-pills-wishlist] h5{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #003199;
+}
+.userAccount.mainSection .tab-pane[id=v-pills-wishlist] p{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+/* main section of user account end */
+
+/* main section of product view start */
+.productView.mainSection{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.productView.mainSection .productView .productViewImg img{
+    background-color: rgb(248, 248, 248);
+}
+.productView.mainSection .productView .productViewDetails .productName{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(87, 81, 83);
+}
+.productView.mainSection .productView .productViewDetails .rating{
+    height: 46px;
+}
+.productView .rate {
+    float: left;
+    height: 46px;
+}
+.productView .rate:not(:checked) > input {
+    position:absolute;
+    top: 47px;
+    left: -5000px;
+}
+.productView .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.productView .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.productView .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.productView.mainSection .productView .productViewDetails .price{
+    font-size: 20px;
+    font-family: Montserrat;
+    color: rgb(154, 154, 154);
+}
+.productView.mainSection .productView .productViewDetails .someDetails{
+    font-size: 13px;
+    color: rgb(87, 81, 83);
+    text-transform: uppercase;
+}
+.productView.mainSection .productView .productViewDetails .availability,
+.productView.mainSection .productView .productViewDetails .productCode,
+.productView.mainSection .productView .productViewDetails .tags{
+    font-size: 13px;
+    color: #8c8c8c;
+}
+.productView.mainSection .productView .productViewDetails .tags:hover{
+    text-decoration: none;
+    color: #1f4ba5;
+}
+.productView.mainSection .productView .productViewDetails p{
+    font-size: 15px;
+    font-family: Roboto;
+    color: rgb(142, 140, 140);
+}
+.productView.mainSection .productView .productViewDetails form label{
+    font-size: 13px;
+    font-family: Montserrat;
+    color: rgb(87, 81, 83);
+    text-transform: uppercase;
+}
+.productView.mainSection .productView .productViewDetails form select{
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 0px;
+}
+.productView.mainSection .productView .productViewDetails form #qty{
+    width: 68px;
+    border-radius: 0px;
+}
+.productView.mainSection .productView .productViewDetails form button{
+    border: 2px solid rgb(31, 75, 165);
+    font-size: 16px;
+    font-family: Montserrat;
+    color: rgb(31, 75, 165);
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 10px 20px;
+    transition-duration: 0.4s;
+}
+.productView.mainSection .productView .productViewDetails form button:hover,
+.productView.mainSection .productView .productViewDetails form button:focus{
+    background-color: rgb(31, 75, 165);
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.btn:focus{
+    box-shadow: none;
+}
+/* main section of product view end */
+
+/* main section of shopping cart start */
+.shopping-cart.mainSection{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.shopping-cart.mainSection .shoppingCart ul{
+    margin-top: 60px;
+}
+.shopping-cart.mainSection .shoppingCart ul li{
+    position: relative;
+    margin-right: 115px;
+    text-align: center;
+}
+.shopping-cart.mainSection .shoppingCart ul li:last-child{
+    margin-right: 0px;
+}
+.shopping-cart.mainSection .shoppingCart ul li .shoppingCartPath{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    width: 145px;
+    height: 10px;
+    background-color: #f6f6f6;
+    z-index: -1;
+}
+.shopping-cart.mainSection .shoppingCart ul li:last-child .shoppingCartPath{
+    right: 45px;
+    width: 165px;
+}
+.shopping-cart.mainSection .shoppingCart ul li .shoppingCartLink{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #f6f6f6;
+    color: #d5d5d5;
+    cursor: default;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart ul li .shoppingCartLink.active{
+    background-color: #1f4ba5;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart ul li .shoppingCartLink.active ~ .shoppingCartPath{
+    background-color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart ul li .tabName{
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table{
+    text-align: left;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table tr td{
+    vertical-align: middle;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table thead tr th{
+    border: 0px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table tr:last-child td{
+    border-bottom: 1px solid #e4e3e3;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .cartHead{
+    font-family: "Varela Round";
+    font-size: 13px;
+    font-weight: 400;
+    color: #1f4ba5;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .cartDelete{
+    text-align: center;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .deleteAll{
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .deleteAll:hover{
+    color: red;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .productImg{
+    width: 77px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .productText{
+    max-width: 190px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .productText p{
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .productText span,
+.shopping-cart.mainSection .shoppingCart .bag .table .color,
+.shopping-cart.mainSection .shoppingCart .bag .table .size{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .oldPricePart{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .oldPrice{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .price{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+.sheqel{
+    font-size: 13px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .btn-group{
+    background-color: #f6f6f6;
+    color: rgb(39, 39, 39);
+    font-size: 14px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .btn-group button{
+    color: rgb(39, 39, 39);
+    font-size: 13px;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .btn-group button:active{
+    background-color: #dad8d8;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .btn-group input{
+    width: 66px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border: 0px;
+    margin-right: -16px;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .btn-group input:focus{
+    outline: 0px;
+    background-color: #ffffff;
+    border: 2px solid #f6f6f6;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .cost{
+    display: inline-block;
+    width: 50px;
+    font-size: 13px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .exitBtn{
+    text-align: center;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .exit{
+    padding: 0px;
+    color: rgb(182, 182, 182);
+    font-size: 13px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .table .exit:hover{
+    color: rgb(151, 150, 150);
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .cartEmpty h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Montserrat;
+    color: rgb(168, 164, 164);
+}
+.shopping-cart.mainSection .shoppingCart .bag .cartLink{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: rgb(31, 75, 165);
+    border: 2px solid rgb(31, 75, 165);
+    border-radius: 0px;
+    padding: 15px 25px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .cartLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(31, 75, 165);
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .bag .total{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .bag .totalPrice{
+    font-size: 19px;
+    font-family: Oswald;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+}
+
+.shopping-cart.mainSection .shoppingCart .pin form label{
+    padding-left: 15px;
+}
+.shopping-cart.mainSection .shoppingCart .pin form input,
+.shopping-cart.mainSection .shoppingCart .pin form select,
+.shopping-cart.mainSection .shoppingCart .pin form textarea{
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .pin form input:focus,
+.shopping-cart.mainSection .shoppingCart .pin form select:focus,
+.shopping-cart.mainSection .shoppingCart .pin form textarea:focus{
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .pin form textarea{
+    resize: none;
+}
+.shopping-cart.mainSection .shoppingCart .pin .deliveryLink{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: rgb(31, 75, 165);
+    border: 2px solid rgb(31, 75, 165);
+    padding: 15px 25px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .pin .deliveryLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(31, 75, 165);
+    transition-duration: 0.4s;
+}
+
+.shopping-cart.mainSection .shoppingCart .credit-card h3{
+    font-family: Montserrat;
+    color: rgb(126, 125, 125);
+}
+.shopping-cart.mainSection .shoppingCart .credit-card form input{
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .credit-card form input:focus{
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .credit-card .paymentLink{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: rgb(31, 75, 165);
+    border: 2px solid rgb(31, 75, 165);
+    padding: 15px 25px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .credit-card .paymentLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(31, 75, 165);
+    transition-duration: 0.4s;
+}
+
+.shopping-cart.mainSection .shoppingCart .check .checkHeads{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.shopping-cart.mainSection .shoppingCart .check .deliveryIcon{
+    display: inline-block;
+    color: rgb(214, 214, 214);
+    width: 35px;
+}
+.shopping-cart.mainSection .shoppingCart .check .deliveryAddress{
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .check .table tr td{
+    vertical-align: middle;
+}
+.shopping-cart.mainSection .shoppingCart .check .table .productImg{
+    width: 77px;
+}
+.shopping-cart.mainSection .shoppingCart .check .table .productText{
+    max-width: 190px;
+}
+.shopping-cart.mainSection .shoppingCart .check .table .productText p{
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+}
+.shopping-cart.mainSection .shoppingCart .check .table .productText span{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+}
+.shopping-cart.mainSection .shoppingCart .check .table .cost{
+    font-size: 13px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .check .total{
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .check .totalPrice{
+    font-size: 19px;
+    font-family: Oswald;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+}
+.shopping-cart.mainSection .shoppingCart .check .confirmationLink{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: rgb(31, 75, 165);
+    border: 2px solid rgb(31, 75, 165);
+    padding: 15px 25px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .check .confirmationLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(31, 75, 165);
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .check .afterConfirmation .confirmationIcon{
+    font-size: 100px;
+}
+.shopping-cart.mainSection .shoppingCart .check .afterConfirmation .confirmationText h3{
+    font-size: 26px;
+    color: rgb(34, 34, 34);
+}
+.shopping-cart.mainSection .shoppingCart .check .afterConfirmation .confirmationText p{
+    font-size: 15px;
+    color: rgb(134, 134, 134);
+    width: 420px;
+}
+.shopping-cart.mainSection .shoppingCart .check .afterConfirmation .confirmationLink{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: rgb(31, 75, 165);
+    border: 2px solid rgb(31, 75, 165);
+    padding: 15px 25px;
+    transition-duration: 0.4s;
+}
+.shopping-cart.mainSection .shoppingCart .check .afterConfirmation .confirmationLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(31, 75, 165);
+    transition-duration: 0.4s;
+}
+/* main section of shopping cart end */
+
+/* main section of notifications start */
+.notifications.mainSection{
+    min-height: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.notifications.mainSection .notificationsHead{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: "Varela Round";
+    font-size: 14px;
+    color: #1f4ba5;
+}
+.notifications.mainSection th.senderHead{
+    width: 15%;
+}
+.notifications.mainSection th.subjectHead{
+    width: 65%;
+}
+.notifications.mainSection th.dateHead{
+    width: 10%;
+}
+.notifications.mainSection th.deleteHead{
+    text-align: center;
+}
+.notifications.mainSection th.deleteHead .deleteAll{
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.notifications.mainSection th.deleteHead .deleteAll:hover{
+    color: red;
+    transition-duration: 0.4s;
+}
+.notifications.mainSection td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
+.notifications.mainSection .sender{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(97, 73, 73);
+}
+.notifications.mainSection .subject{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(97, 73, 73);
+}
+.notifications.mainSection .subject span{
+    cursor: pointer;
+}
+.notifications.mainSection .date{
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+}
+.notifications.mainSection .delete{
+    text-align: center;
+}
+.notifications.mainSection .delete button{
+    padding: 0px;
+    color: rgb(182, 182, 182);
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+.notifications.mainSection .delete button:hover{
+    color: rgb(151, 150, 150);
+    transition-duration: 0.4s;
+}
+.notifications.mainSection .no-notifications{
+    margin-top: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Montserrat;
+    color: rgb(168, 164, 164);
+}
+.notifications.mainSection .modal .modal-content{
+    border-radius: 0px;
+    background-color: #1f4ba5;
+}
+.notifications.mainSection .modal .modal-header{
+    border-radius: 0px;
+    background-color: #1f4ba5;
+}
+.notifications.mainSection .modal .modal-title{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #ffffff;
+}
+.notifications.mainSection .modal .close{
+    color: #ffffff;
+    opacity: 1;
+}
+.notifications.mainSection .modal .close:hover,
+.notifications.mainSection .modal .close:focus{
+    opacity: 0.5;
+    outline: 0px;
+}
+.notifications.mainSection .modal .modal-body{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(97, 73, 73);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+}
+/* main section of notifications end */
+
+/* footer section start */
+.footer{
+    background-color: #f8f8f8;
+    padding-top: 50px;
+}
+.footer .footerItems h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    color: #575153;
+    margin-bottom: 25px;
+}
+.footer .footerItems ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footer .footerItems ul li{
+    margin-top: 5px;
+}
+.footer .footerItems ul li a,
+.footer .footerItems ul li span{
+    font-size: 13px;
+    font-family: Montserrat;
+    color: #727272;
+}
+.footer .footerItems ul li a{
+    transition-duration: 0.4s;
+}
+.footer .footerItems ul li a:hover{
+    color: #1f4ba5;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+.footer .footerItems ul li a.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+/* social start */
+.social .socialLinks{
+    width: 45px;
+    height: 45px;
+    font-size: 27px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #1f4ba5;
+    transition-duration: 0.4s;
+}
+.social .socialLinks:last-child{
+    margin-right: 0px;
+}
+.social .socialLinks.facebook{
+    background-color: #3C5A99;
+}
+.social .socialLinks.twitter{
+    background-color: #1DA1F2;
+}
+.social .socialLinks.instagram{
+    background: linear-gradient(to bottom , #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+.social .socialLinks.pinterest{
+    background-color: #BD081C;
+}
+.social .socialLinks:hover{
+    opacity: 0.8;
+    transition-duration: 0.4s;
+}
+/* social end */
+
+.footer .copyRightLine{
+    height: 36px;
+    background-color: #222222;
+}
+.footer .copyRightLine span{
+    color: #999999;
+    font-family: Montserrat;
+    font-size: 13px;
+}
+/* footer section end */
+
+@media (max-width: 991px){
+    .searching{
+        margin-bottom: 20px;
+    }
+}

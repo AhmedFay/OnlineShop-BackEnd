@@ -1,0 +1,114 @@
+﻿@model IEnumerable<OnlineSHProject.Models.Notification>
+
+@{
+    ViewBag.Title = "Notifications";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="container-fluid notifications mainSection pb-5">
+    <div class="row px-5">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="notificationsHead senderHead">Sender</th>
+                    <th scope="col" class="notificationsHead subjectHead">Notification Content</th>
+                    <th scope="col" class="notificationsHead dateHead">Date</th>
+                    <th scope="col" class="notificationsHead deleteHead"><span class="deleteAll">Delete All</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="sender">@Html.DisplayFor(modelItem => item.SenderName)</td>
+                        <td class="subject">
+                            <span data-toggle="modal" data-target="#notification-content">@Html.DisplayFor(modelItem => item.Content)</span>
+                            <p class="d-none"></p>
+                        </td>
+                        <td class="date">@Html.DisplayFor(modelItem => item.Time)</td>
+                        <td class="delete">
+                            <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td class="sender">system</td>
+                    <td class="subject">
+                        <span data-toggle="modal" data-target="#notification-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                        <p class="d-none"></p>
+                    </td>
+                    <td class="date">7 april</td>
+                    <td class="delete">
+                        <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sender">defacto</td>
+                    <td class="subject">
+                        <span data-toggle="modal" data-target="#notification-content">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repellendus, veritatis cum, ducimus itaque debitis nihil labore consequuntur id quod molestiae ipsam reiciendis totam nesciunt? Rem temporibus nobis aspernatur quas!
+                        </span>
+                        <p class="d-none"></p>
+                    </td>
+                    <td class="date">1 april</td>
+                    <td class="delete">
+                        <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sender">2nice</td>
+                    <td class="subject">
+                        <span data-toggle="modal" data-target="#notification-content">ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium repudiandae excepturi cumque laudantium magni ad vel deserunt dolore officia, nemo nulla suscipit.</span>
+                        <p class="d-none"></p>
+                    </td>
+                    <td class="date">13 march</td>
+                    <td class="delete">
+                        <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sender">gloria hotel</td>
+                    <td class="subject">
+                        <span data-toggle="modal" data-target="#notification-content">ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                        <p class="d-none"></p>
+                    </td>
+                    <td class="date">10 march</td>
+                    <td class="delete">
+                        <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Modal start -->
+        <div class="modal fade" id="notification-content" tabindex="-1" role="dialog" aria-labelledby="notification-contentTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="notification-contentTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Modal body</div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+
+        <div class="no-notifications col d-none">
+            <h3>no notifications</h3>
+        </div>
+    </div>
+</div>

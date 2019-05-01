@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/Content/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+        <title>@ViewBag.Title</title>
+        <title>Product View</title>
+    </head>
+    <body>
+        <!-- header section start -->
+        <div class="container-fluid">
+            <!-- head-navs start -->
+            <div class="row theHead justify-content-around">
+                <div class="headForm">
+                    <span>Currency : NIS</span>
+                </div>
+                <div class="headNavs">
+                    <nav>
+                        <a href="../sign up/index.html">Register</a>
+                        <a href="../sign up/index.html">Sign in</a>
+                    </nav>
+                    <div class="shoppingCart">
+                        <a href="../shopping cart/index.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge badge-light">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- head-navs end -->
+            <!-- slider section start -->
+            <div class="row sliderSection">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <!-- navbar start -->
+                        <div class="row">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 py-3">
+                                <a class="navbar-brand" href="../home/index.html">online shopping</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                men<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                women<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                kids<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                accessories<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                foods<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                brands<br>
+                                                <span class="nav-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                                                        <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                        <a class="dropdown-item" href="#">Sportswear</a>
+                                                        <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                                                        <a class="dropdown-item" href="#">T-Shirts</a>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="px-4 mt-2 mb-4">formal</h6>
+                                                        <a class="dropdown-item" href="#">Jackets</a>
+                                                        <a class="dropdown-item" href="#">Shirts</a>
+                                                        <a class="dropdown-item" href="#">Suits</a>
+                                                        <a class="dropdown-item" href="#">Trousers</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                                                    <h1>autumn sale!</h1>
+                                                    <p>up to 50% off</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="form-inline searching ml-lg-4 mt-3 mt-lg-0" action="">
+                                        <div class="form-group">
+                                            <input type="search" placeholder="Search" class="form-control">
+                                            <button type="submit" class="searchBtn">
+                                                <i class='fas fa-search'></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- navbar end -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/Content/img/girl.png" class="d-block w-100" alt="slide 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#" class="sliderLink">more details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/Content/img/girl.png" class="d-block w-100" alt="slide 2">
+                                <div class="carousel-caption d-none d-md-block ">
+                                    <a href="#" class="sliderLink">more details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/Content/img/girl.png" class="d-block w-100" alt="slide 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#" class="sliderLink">more details</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/Content/img/girl.png" class="d-block w-100" alt="slide 4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#" class="sliderLink">more details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider section end -->
+        </div>
+        <!-- header section end -->
+        <!-- main section start -->
+        <div class="container-fluid mainSection">
+            @RenderBody()
+        </div>
+        <!-- main section end -->
+        <!-- footer section start -->
+        <div class="container-fluid footer">
+            <div class="row justify-content-center">
+                <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+                    <h6>information</h6>
+                    <ul>
+                        <li><a href="#">The brand</a></li>
+                        <li><a href="#">Local stores</a></li>
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Privacy & cookies</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+                    <h6>why buy from us</h6>
+                    <ul>
+                        <li><a href="#">Shipping & returns</a></li>
+                        <li><a href="#">Secure shopping</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Award winning</a></li>
+                        <li><a href="#">Ethical trading</a></li>
+                    </ul>
+                </div>
+                <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+                    <h6>your account</h6>
+                    <ul>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">View cart</a></li>
+                        <li><a href="#">View your lookbook</a></li>
+                        <li><a href="#">Track an order</a></li>
+                        <li><a href="#">Update information</a></li>
+                    </ul>
+                </div>
+                <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+                    <h6>lookbook</h6>
+                    <ul>
+                        <li><a href="#">Latest posts</a></li>
+                        <li><a href="#">Men's lookbook</a></li>
+                        <li><a href="#">Women's lookbook</a></li>
+                        <li><a href="#">Lookbooks RSS feed</a></li>
+                        <li><a href="#">View your lookbook</a></li>
+                        <li><a href="#">Delete your lookbook</a></li>
+                    </ul>
+                </div>
+                <div class="footerItems col-12 col-md-2">
+                    <h6>contact details</h6>
+                    <ul>
+                        <li><span>Telephone: 0123-456-789</span></li>
+                        <li><span>Email: support@website.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row social justify-content-center my-5">
+                <a class="socialLinks" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="socialLinks" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="socialLinks" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="socialLinks" href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <div class="row copyRightLine align-items-center justify-content-center">
+                <span>OnlineShopping.com All rights reserved &copy 2019-2020</span>
+            </div>
+        </div>
+        <!-- footer section end -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="~/Content/js/jquery3.3.1.js"></script>
+        <script src="~/Content/js/popper.js"></script>
+        <script src="~/Content/js/bootstrap.min.js"></script>
+        <script src="~/Content/js/main.js"></script>
+    </body>
+    </html>*@

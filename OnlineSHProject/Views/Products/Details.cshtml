@@ -1,0 +1,165 @@
+﻿@model OnlineSHProject.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.Availability)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Availability)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
+
+<!-- main section start -->
+<div class="container-fluid mainSection">
+    <div class="row justify-content-center pt-3">
+        <div class="row productView col-12 col-md-8 my-5">
+            <div class="productViewImg col-12 col-lg-5 mb-5">
+                <img class="img-fluid" src="img/blouse.png">
+            </div>
+            <div class="productViewDetails col-12 col-lg-7 pl-4">
+                <h6 class="productName">classic sweatshirt</h6>
+                <div class="rating w-100 my-2">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+                <div class="price w-100 mb-4">
+                    <span><sup>&#8362;</sup><del>107</del></span>
+                    <span> &nbsp;&nbsp; <sup>&#8362;</sup>89.99</span>
+                </div>
+                <span class="someDetails">availability: </span>
+                <span class="availability">@Model.Availability</span>
+                <br>
+                <span class="someDetails">product code: </span>
+                <span class="productCode">@Model.ProductCode</span>
+                <br>
+                <span class="someDetails">tags: </span>
+                <a href="#" class="tags">#classic</a>
+                <a href="#" class="tags">#casual</a>
+                <a href="#" class="tags">#v-neck</a>
+                <a href="#" class="tags">#loose</a>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, laudantium exercitationem ipsa repudiandae itaque eligendi assumenda sit nisi ut ducimus commodi neque autem amet, repellat molestiae labore fugiat culpa obcaecati.</p>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="selectColour">colour</label>
+                            <select id="selectColour" class="form-control">
+                                <option>Black</option>
+                                <option>White</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 ml-3">
+                            <label for="selectSize">size</label>
+                            <select id="selectSize" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                                @*@foreach (var item in Model.Size)
+                                {
+                                    <option>S</option>
+                                }*@
+                            </select>
+                        </div>
+                        <div class="form-group ml-4">
+                            <label for="qty">qty</label>
+                            <input type="number" class="form-control" id="qty" value="1">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn add-to-cart mt-4 mr-4"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                    <button type="button" class="btn add-to-wishlist mt-4"><i class="far fa-heart"></i> add to wishlist</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main section end -->

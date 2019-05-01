@@ -1,0 +1,357 @@
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll.config
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.pdb
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Collections.Immutable.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\EntityFramework.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Web.Infrastructure.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Owin.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\WebGrease.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.pdb
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\EntityFramework.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CoreCompileInputs.cache
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CopyComplete
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.pdb
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.InitialCreate.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.GenerateResource.cache
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.Users.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe.config
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.rsp
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe.config
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.rsp
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Managed.Core.targets
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.AppContext.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Console.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Compression.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.AccessControl.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Claims.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Principal.Windows.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.ValueTuple.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XmlDocument.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe.config
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.rsp
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe.config
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.ss.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.nn.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.asas.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.pr.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.qq.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.zz.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.rr.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.b.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.ff.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.hh.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.pp.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.gg.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.xyz.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csprojAssemblyReference.cache
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa1.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa2.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.mm.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.mm2.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.nn1.resources
+D:\LastEditOnlineShopping\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.xyz1.resources
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll.config
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.pdb
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe.config
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.rsp
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe.config
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.rsp
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.AppContext.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Console.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Compression.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Claims.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.ValueTuple.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe.config
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.rsp
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\EntityFramework.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Owin.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\WebGrease.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.pdb
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\EntityFramework.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csprojAssemblyReference.cache
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CoreCompileInputs.cache
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CopyComplete
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.dll
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.pdb
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.newMigration.resources
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.GenerateResource.cache
+C:\Users\JeZar\Downloads\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa.resources
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll.config
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\OnlineSHProject.pdb
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.exe.config
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csc.rsp
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.exe.config
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\csi.rsp
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.AppContext.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Console.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Compression.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.IO.Pipes.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Claims.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.ValueTuple.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.exe.config
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\vbc.rsp
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\EntityFramework.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Owin.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\WebGrease.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Helpers.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Mvc.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Optimization.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.Razor.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Web.WebPages.Razor.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Newtonsoft.Json.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Antlr3.Runtime.pdb
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\EntityFramework.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\EntityFramework.SqlServer.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csprojAssemblyReference.cache
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.newMigration.resources
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa.resources
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.GenerateResource.cache
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CoreCompileInputs.cache
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.csproj.CopyComplete
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.dll
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.pdb
+C:\Users\JeZar\Downloads\online shop\OnlineSHProject\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aaa.resources

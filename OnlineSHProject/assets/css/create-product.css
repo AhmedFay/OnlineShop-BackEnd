@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+}
+.form-control{
+    display: inline-block;
+    width: 49%;
+  }
+.tags span{
+    padding: 5px 10px;
+    background-color: #dedede;
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+    border-radius: 8px;
+    color: #6f6f6f;
+}
+.tags span i{
+    margin-left: 5px;
+    color: #969696;
+    cursor: pointer;
+}
+.tags span i:hover{
+    color: #333;
+}
+label{
+    display: block;
+}
+textarea{
+    resize: none;
+}

@@ -1,0 +1,111 @@
+﻿@model OnlineSHProject.Models.Products
+
+@{
+    ViewBag.Title = "Details " + Model.ProductName;
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    bool v1 = false, v2 = false, v3 = false, v4 = false, v5 = false;
+}
+
+@*
+    @Html.DisplayFor(model => model.ProductName)
+    @Html.DisplayFor(model => model.Amount)
+    @Html.DisplayFor(model => model.Category)
+    @Html.DisplayFor(model => model.Date)
+    @Html.DisplayFor(model => model.ExpireDate)
+    @Html.DisplayFor(model => model.Company)
+    @Html.DisplayNameFor(model => model.ImagePath)
+*@
+
+
+<div class="container-fluid productView mainSection">
+    <div class="row justify-content-center pt-3">
+        <div class="row productView col-12 col-md-8 my-5">
+            <div class="productViewImg col-12 col-lg-5 mb-5">
+                @*<img class="img-fluid" src="~/assets/img/blouse.png">*@
+                <img class="img-fluid" src="~/Images/@(Model.ProductName).png">
+            </div>
+            <div class="productViewDetails col-12 col-lg-7 pl-4">
+                <h6 class="productName">@Html.DisplayFor(model => model.ProductName)</h6>
+                <div class="rating w-100 my-2">
+                    @if (Model.NumVote != 0)
+                    {
+                        switch (Model.SumVote / Model.NumVote)
+                        {
+                            case 1
+                                :
+                                v1 = true;
+                                break;
+                            case 2:
+                                v2 = true;
+                                break;
+                            case 3:
+                                v3 = true;
+                                break;
+                            case 4:
+                                v4 = true;
+                                break;
+                            case 5:
+                                v5 = true;
+                                break;
+                        }
+                    }
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" disabled checked="@v5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" disabled checked="@v4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" disabled checked="@v3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" disabled checked="@v2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" disabled checked="@v1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+                <div class="price w-100 mb-4">
+                    <span><sup>&#8362;</sup><del>@(Model.Price + Model.Price * .25)</del></span>
+                    <span> &nbsp;&nbsp; <sup>&#8362;</sup>@Model.Price.99</span>
+                </div>
+                <span class="someDetails">availability: </span>
+                <span class="availability">@Html.DisplayFor(model => model.Availability)</span>
+                <br>
+                <span class="someDetails">product code: </span>
+                <span class="productCode">#@Html.DisplayFor(model => model.ProductCode)</span>
+                <br>
+                <span class="someDetails">tags: </span>
+                @*@foreach (var tag in Model.TAGS.Split(' '))
+                    {
+                        <a href="#" class="tags">#@tag</a>
+                    }*@
+                <p class="mt-4">@Html.DisplayFor(model => model.Description) .</p>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="selectColour">colour</label>
+                            <select id="selectColour" class="form-control">
+                                <option>Black</option>
+                                <option>White</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 ml-3">
+                            <label for="selectSize">size</label>
+                            <select id="selectSize" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                            </select>
+                        </div>
+                        <div class="form-group ml-4">
+                            <label for="qty">qty</label>
+                            <input type="number" class="form-control" id="qty" value="1">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn add-to-cart mt-4 mr-4"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                    <button type="button" class="btn add-to-wishlist mt-4"><i class="far fa-heart"></i> add to wishlist</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
