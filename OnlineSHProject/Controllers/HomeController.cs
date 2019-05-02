@@ -120,13 +120,14 @@ namespace OnlineSHProject.Controllers
             return View(myCarts);
         }
 
+        //ajax action see main.js
         [Authorize]
-        public ActionResult ConfirmOrder()
+        public void ConfirmOrder()
         {
             var userid = User.Identity.GetUserId();
             var user = db.Users.Find(userid);
 
-            var myCarts = db.Cart.Where(c => c.User.Id == userid).ToList();
+            var myCarts = db.Cart.Where(c => c.User.Id == userid).Include(c => c.Product).ToList();
 
             foreach (var cart in myCarts)
             {
@@ -140,7 +141,9 @@ namespace OnlineSHProject.Controllers
 
             db.SaveChanges();
 
-            return View();
+            db.Cart.RemoveRange(myCarts);
+            db.SaveChanges();
+
         }
 
 

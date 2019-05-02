@@ -156,4 +156,19 @@ $(document).ready(function(){
     }
     // user account page end
 
+    //ajax to confirm order
+    $("#confirmLink").click(function(e){
+
+        e.preventDefault();
+        $.ajax({
+
+            url:$(this).attr("href"), // comma here instead of semicolon   
+            success: function(){
+                alert("Confirm order");  // or any other indication if you want to show
+            }
+
+        });
+
+    });
+
 });

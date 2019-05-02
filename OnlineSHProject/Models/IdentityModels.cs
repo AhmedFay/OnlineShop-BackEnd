@@ -80,6 +80,8 @@ namespace OnlineSHProject.Models
 
         //public System.Data.Entity.DbSet<OnlineSHProject.Models.ApplicationUser> ApplicationUsers { get; set; }
 
+        //public System.Data.Entity.DbSet<OnlineSHProject.Models.ApplicationUser> ApplicationUsers { get; set; }
+
         //  public System.Data.Entity.DbSet<OnlineSHProject.Models.ApplicationUser> ApplicationUsers { get; set; }
 
         //  public System.Data.Entity.DbSet<OnlineSHProject.Models.ApplicationUser> ApplicationUsers { get; set; }

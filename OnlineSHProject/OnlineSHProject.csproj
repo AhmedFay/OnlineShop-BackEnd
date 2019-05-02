@@ -616,11 +616,6 @@
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\Manage\Profile.cshtml" />
-    <Content Include="Views\ApplicationUsers\Create.cshtml" />
-    <Content Include="Views\ApplicationUsers\Delete.cshtml" />
-    <Content Include="Views\ApplicationUsers\Details.cshtml" />
-    <Content Include="Views\ApplicationUsers\Edit.cshtml" />
-    <Content Include="Views\ApplicationUsers\Index.cshtml" />
     <Content Include="Views\Manage\Edit.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Admin\IndexProducts.cshtml" />
@@ -629,7 +624,6 @@
     <Content Include="Views\Admin\DeleteProducts.cshtml" />
     <Content Include="Views\Manage\SendNotification.cshtml" />
     <Content Include="Views\Manage\Notifications.cshtml" />
-    <Content Include="Views\Products\Create2.cshtml" />
     <Content Include="Views\Vote\DoVote.cshtml" />
     <Content Include="Views\Home\Vote.cshtml" />
     <Content Include="Views\Admin\UserManage.cshtml" />
@@ -640,11 +634,11 @@
     <Content Include="Views\Shared\_LayoutShopOwner.cshtml" />
     <Content Include="Views\Home\ShowCart.cshtml" />
     <Content Include="Views\Products\ShowOrders.cshtml" />
+    <Content Include="Views\Admin\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
-    <Folder Include="Views\Customer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

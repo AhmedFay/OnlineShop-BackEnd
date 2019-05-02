@@ -121,6 +121,12 @@ namespace OnlineSHProject.Controllers
             return View(users);
         }
 
+        public ActionResult Details(string id)
+        {
+            var users = context.Users.Find(id);
+            return View(users);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

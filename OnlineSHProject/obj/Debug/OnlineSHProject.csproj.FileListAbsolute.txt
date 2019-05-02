@@ -459,7 +459,6 @@ C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\bin\Micr
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.csprojAssemblyReference.cache
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.newMigration.resources
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa.resources
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aaa.resources
@@ -471,3 +470,4 @@ C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debu
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa1.resources
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa2.resources
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa3.resources
+C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.csprojAssemblyReference.cache

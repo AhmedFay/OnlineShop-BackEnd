@@ -14,7 +14,7 @@ using OnlineSHProject.Models;
 
 namespace OnlineSHProject.Controllers
 {
-    // [Authorize (Roles = "Admin, ShopOwner")]
+    [Authorize(Roles = "Admin, ShopOwner")]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

@@ -27,7 +27,7 @@ namespace OnlineSHProject.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -39,9 +39,9 @@ namespace OnlineSHProject.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -125,7 +125,7 @@ namespace OnlineSHProject.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -432,6 +432,21 @@ namespace OnlineSHProject.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
+        public ActionResult Approve(string id)
+        {
+            var users = db.Users.Find(id);
+            if (users != null)
+            {
+                users.IsAccepted = true;
+                UserManager.AddToRole(id, "ShopOwner");
+            }
+
+            db.SaveChanges();
+            return RedirectToAction("UserManage", "Admin");
+        }
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -451,7 +466,7 @@ namespace OnlineSHProject.Controllers
 
             base.Dispose(disposing);
         }
-       
+
 
 
         #region Helpers
