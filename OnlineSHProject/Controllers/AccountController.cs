@@ -192,8 +192,8 @@ namespace OnlineSHProject.Controllers
 
                     return RedirectToAction("Index", "Home");
                 }
-                ViewBag.Name = new SelectList(db.Roles.Where(u => !u.Name.Contains("Admin"))
-                                          .ToList(), "Name", "Name");
+                //ViewBag.Name = new SelectList(db.Roles.Where(u => !u.Name.Contains("Admin"))
+                //                          .ToList(), "Name", "Name");
                 AddErrors(result);
             }
 

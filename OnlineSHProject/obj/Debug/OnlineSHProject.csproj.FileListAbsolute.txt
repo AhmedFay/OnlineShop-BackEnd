@@ -470,3 +470,4 @@ C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debu
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.pdb
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa1.resources
 C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa2.resources
+C:\Users\JeZar\Downloads\online shop\OnlineShop-BackEnd\OnlineSHProject\obj\Debug\OnlineSHProject.Migrations.aa3.resources

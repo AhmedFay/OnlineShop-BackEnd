@@ -46,27 +46,36 @@ namespace OnlineSHProject.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ProductName,Price,Amount,Category,Availability,ProductCode, Description, ExpireDate")] Products products, HttpPostedFileBase img)
+        public ActionResult Create([Bind(Include = "Id,ProductName,Price,Amount,Category,Availability,ProductCode, Description, ExpireDate")] Products products, HttpPostedFileBase img1, HttpPostedFileBase img2)
         {
 
-            if (!ImageIsValid(img))
+            if (!ImageIsValid(img1) || !ImageIsValid(img2))
             {
                 ModelState.AddModelError("img", "Please Choose an image file and png extension");
             }
 
             if (ModelState.IsValid)
             {
-                var ext = Path.GetExtension(img.FileName);
-                var path = Server.MapPath($"~/Images/{products.ProductName}{ext}");
-                img.SaveAs(path);
 
                 var userid = User.Identity.GetUserId();
                 var user = db.Users.Find(userid);
 
                 products.ShopOwner = user;
                 products.Date = DateTime.Now;
-                products.ImagePath = path;
                 db.Products.Add(products);
+
+                db.SaveChanges();
+
+                //var ext1 = Path.GetExtension(img1.FileName);
+                var path1 = Server.MapPath($"~/Images/{products.ProductName}{products.Id}1.png");
+                img1.SaveAs(path1);
+
+                //var ext2 = Path.GetExtension(img2.FileName);
+                var path2 = Server.MapPath($"~/Images/{products.ProductName}{products.Id}2.png");
+                img2.SaveAs(path2);
+
+                products.ImagePath1 = path1;
+                products.ImagePath2 = path2;
 
                 db.SaveChanges();
 

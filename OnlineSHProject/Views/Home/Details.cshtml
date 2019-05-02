@@ -13,7 +13,7 @@
     @Html.DisplayFor(model => model.Date)
     @Html.DisplayFor(model => model.ExpireDate)
     @Html.DisplayFor(model => model.Company)
-    @Html.DisplayNameFor(model => model.ImagePath)
+    @Html.DisplayNameFor(model => model.ImagePath1)
 *@
 
 
@@ -22,7 +22,7 @@
         <div class="row productView col-12 col-md-8 my-5">
             <div class="productViewImg col-12 col-lg-5 mb-5">
                 @*<img class="img-fluid" src="~/assets/img/blouse.png">*@
-                <img class="img-fluid" src="~/Images/@(Model.ProductName).png">
+                <img class="img-fluid" src="~/Images/@(Model.ProductName)@(Model.Id)1.png">
             </div>
             <div class="productViewDetails col-12 col-lg-7 pl-4">
                 <h6 class="productName">@Html.DisplayFor(model => model.ProductName)</h6>
@@ -78,7 +78,7 @@
                         <a href="#" class="tags">#@tag</a>
                     }*@
                 <p class="mt-4">@Html.DisplayFor(model => model.Description) .</p>
-                <form action="">
+                <form action="~/Home/AddtoCart/@Model.Id">
                     <div class="form-row">
                         <div class="form-group col-4">
                             <label for="selectColour">colour</label>
@@ -102,8 +102,8 @@
                             <input type="number" class="form-control" id="qty" value="1">
                         </div>
                     </div>
-                    <a class="btn add-to-cart mt-4 mr-4" href="~/Home/AddtoCart/@Model.Id"><i class="fas fa-shopping-cart"></i> add to cart</a>
-                    @*<button type="submit" class="btn add-to-cart mt-4 mr-4"><i class="fas fa-shopping-cart"></i> add to cart</button>*@
+                    @*<a class="btn add-to-wishlist mt-4 mr-4" href=""><i class="fas fa-shopping-cart"></i> add to cart</a>*@
+                    <button type="submit" class="btn add-to-cart mt-4 mr-4"><i class="fas fa-shopping-cart"></i> add to cart</button>
                     <button type="button" class="btn add-to-wishlist mt-4"><i class="far fa-heart"></i> add to wishlist</button>
                 </form>
             </div>

@@ -30,7 +30,8 @@ namespace OnlineSHProject.Models
         public string TAGS { get; set; }
         public List<Attributes> Attributes { get; set; }
         public List<Vote> Vote { get; set; }
-        public string ImagePath { get; set; }
+        public string ImagePath1 { get; set; }
+        public string ImagePath2 { get; set; }
 
         public ApplicationUser ShopOwner { get; set; }
 

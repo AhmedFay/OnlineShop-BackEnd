@@ -5,52 +5,7 @@
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Amount)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Category)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ExpireDate)
-        </th>
-        @*<th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>*@
-        <th>
-            @Html.DisplayNameFor(model => model.Availability)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NumVote)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SumVote)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Company)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductCode)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TAGS)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
+    @*@foreach (var item in Model)
     {
         <tr>
             <td>
@@ -66,39 +21,13 @@
                 @Html.DisplayFor(modelItem => item.Category)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ExpireDate)
-            </td>
-            @*<td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.Availability)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumVote)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SumVote)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Company)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TAGS)
             </td>
             <td>
                 @Html.ActionLink("Details", "Details", new { id = item.Id })
             </td>
         </tr>
-    }
-
-</table>
+    }*@
 
 <!-- main section start -->
 <div class="container-fluid home mainSection px-5">
@@ -115,30 +44,34 @@
     </div>
 
     <div class="row px-5">
-        <div class="mainSectionItems col-12 col-md-6 mb-4 mb-md-0">
+        <div class="mainSectionItems col-12 mb-4 mb-md-0">
             <div class="row">
-                <div class="col-6">
-                    <div class="mainSectionImg">
-                        <img class="img-fluid" src="~/assets/img/bag1.jpg" alt="bag">
-                        <span class="price"><sup>&#8362;</sup>89.99</span>
-                        <div class="thumb">
-                            <div class="main-thumb mb-2">
-                                <img class="img-fluid" src="~/assets/img/bag1.jpg">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="mainSectionImg">
+                            <img class="img-fluid" src="~/Images/@(item.ProductName)@(item.Id)1.png" alt="bag">
+                            <span class="price"><sup>&#8362;</sup>@item.Price</span>
+                            <div class="thumb">
+                                <div class="main-thumb mb-2">
+                                    <img class="img-fluid" src="~/Images/@(item.ProductName)@(item.Id)1.png">
+                                </div>
+                                <div class="another-thumb">
+                                    <img class="img-fluid" src="~/Images/@(item.ProductName)@(item.Id)2.png">
+                                </div>
                             </div>
-                            <div class="another-thumb">
-                                <img class="img-fluid" src="~/assets/img/bag2.jpg">
+                            <div class="imgDetails d-none col-12">
+                                <h6>@item.ProductName <sup>&#8362;</sup>@item.Price</h6>
+                                <p>@item.Description</p>
+                                <a class="homeCart" href="~/Home/Details/@item.Id"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="homeWishlist"><i class="far fa-heart"></i></a>
+                                <a class="homeInfo" href="~/Home/Details/@item.Id"><i class="fas fa-info"></i></a>
                             </div>
-                        </div>
-                        <div class="imgDetails d-none col-12">
-                            <h6>womens burnt orange casual tee <sup>&#8362;</sup>29.95</h6>
-                            <p>Classic casual t_shirt for women on the move. 100% cotton.</p>
-                            <a class="homeCart" href="product view/product-view.html"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="homeWishlist"><i class="far fa-heart"></i></a>
-                            <a class="homeInfo" href="product view/product-view.html"><i class="fas fa-info"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
+                }
+
+                <div class="col-md-4 col-lg-3 mb-4">
                     <div class="mainSectionImg">
                         <img class="img-fluid" src="~/assets/img/headphone1.jpg" alt="headphone">
                         <span class="price"><sup>&#8362;</sup>47.50</span>
@@ -159,54 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 mt-4">
-                    <div class="mainSectionImg">
-                        <img class="img-fluid" src="~/assets/img/shoes1.jpg" alt="shoes">
-                        <span class="price"><sup>&#8362;</sup>69.95</span>
-                        <div class="thumb">
-                            <div class="main-thumb mb-2">
-                                <img class="img-fluid" src="~/assets/img/shoes1.jpg">
-                            </div>
-                            <div class="another-thumb">
-                                <img class="img-fluid" src="~/assets/img/shoes2.jpg">
-                            </div>
-                        </div>
-                        <div class="imgDetails d-none col-12">
-                            <h6>womens burnt orange casual tee <sup>&#8362;</sup>29.95</h6>
-                            <p>Classic casual t_shirt for women on the move. 100% cotton.</p>
-                            <a class="homeCart" href="product view/product-view.html"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="homeWishlist"><i class="far fa-heart"></i></a>
-                            <a class="homeInfo" href="product view/product-view.html"><i class="fas fa-info"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mainSectionItems col-12 col-md-6">
-            <div class="row">
-                <div class="col-12 mb-4">
-                    <div class="mainSectionImg">
-                        <img class="img-fluid" src="~/assets/img/blouse1.jpg" alt="blouse">
-                        <span class="price"><sup>&#8362;</sup><del>107</del> &#xa0; <sup>&#8362;</sup>89.99</span>
-                        <div class="thumb">
-                            <div class="main-thumb mb-2">
-                                <img class="img-fluid" src="~/assets/img/blouse1.jpg">
-                            </div>
-                            <div class="another-thumb">
-                                <img class="img-fluid" src="~/assets/img/blouse2.jpg">
-                            </div>
-                        </div>
-                        <div class="imgDetails d-none col-12">
-                            <h6>womens burnt orange casual tee <sup>&#8362;</sup>29.95</h6>
-                            <p>Classic casual t_shirt for women on the move. 100% cotton.</p>
-                            <a class="homeCart" href="product view/product-view.html"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="homeWishlist"><i class="far fa-heart"></i></a>
-                            <a class="homeInfo" href="product view/product-view.html"><i class="fas fa-info"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
+                <div class="col-md-4 col-lg-3 mb-4">
                     <div class="mainSectionImg">
                         <img class="img-fluid" src="~/assets/img/t-shirt1.jpg" alt="t-shirt">
                         <span class="price"><sup>&#8362;</sup>29.95</span>
@@ -227,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-4 col-lg-3 mb-4">
                     <div class="mainSectionImg">
                         <img class="img-fluid" src="~/assets/img/jacket1.jpg" alt="jacket">
                         <span class="price"><sup>&#8362;</sup>34.79</span>
@@ -237,6 +123,48 @@
                             </div>
                             <div class="another-thumb">
                                 <img class="img-fluid" src="~/assets/img/jacket2.jpg">
+                            </div>
+                        </div>
+                        <div class="imgDetails d-none col-12">
+                            <h6>womens burnt orange casual tee <sup>&#8362;</sup>29.95</h6>
+                            <p>Classic casual t_shirt for women on the move. 100% cotton.</p>
+                            <a class="homeCart" href="product view/product-view.html"><i class="fas fa-shopping-cart"></i></a>
+                            <a class="homeWishlist"><i class="far fa-heart"></i></a>
+                            <a class="homeInfo" href="product view/product-view.html"><i class="fas fa-info"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="mainSectionImg">
+                        <img class="img-fluid" src="~/assets/img/shoes1.jpg" alt="shoes">
+                        <span class="price"><sup>&#8362;</sup>69.95</span>
+                        <div class="thumb">
+                            <div class="main-thumb mb-2">
+                                <img class="img-fluid" src="~/assets/img/shoes1.jpg">
+                            </div>
+                            <div class="another-thumb">
+                                <img class="img-fluid" src="~/assets/img/shoes2.jpg">
+                            </div>
+                        </div>
+                        <div class="imgDetails d-none col-12">
+                            <h6>womens burnt orange casual tee <sup>&#8362;</sup>29.95</h6>
+                            <p>Classic casual t_shirt for women on the move. 100% cotton.</p>
+                            <a class="homeCart" href="product view/product-view.html"><i class="fas fa-shopping-cart"></i></a>
+                            <a class="homeWishlist"><i class="far fa-heart"></i></a>
+                            <a class="homeInfo" href="product view/product-view.html"><i class="fas fa-info"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="mainSectionImg">
+                        <img class="img-fluid" src="~/assets/img/blouse1.jpg" alt="blouse">
+                        <span class="price"><sup>&#8362;</sup><del>107</del> &#xa0; <sup>&#8362;</sup>89.99</span>
+                        <div class="thumb">
+                            <div class="main-thumb mb-2">
+                                <img class="img-fluid" src="~/assets/img/blouse1.jpg">
+                            </div>
+                            <div class="another-thumb">
+                                <img class="img-fluid" src="~/assets/img/blouse2.jpg">
                             </div>
                         </div>
                         <div class="imgDetails d-none col-12">
