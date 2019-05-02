@@ -1,0 +1,249 @@
+﻿@using OnlineSHProject.Models
+@model IEnumerable<OnlineSHProject.Models.ProductsCart>
+
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ApplicationUser myuser = ViewBag.myuser;
+}
+
+<!-- main section start -->
+<div class="container-fluid shopping-cart mainSection px-0 pt-5" id="mainSection">
+    <div class="row mx-3">
+        <div class="shoppingCart col-12 mb-5">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="shoppingCartLink active mx-auto disabled" id="pills-bag-tab" data-toggle="pill" href="#pills-bag" role="tab" aria-controls="pills-bag" aria-selected="true"><i class="fas fa-shopping-bag"></i></a>
+                    <span class="tabName">Cart</span>
+                </li>
+                <li class="nav-item">
+                    <a class="shoppingCartLink mx-auto disabled" id="pills-pin-tab" data-toggle="pill" href="#pills-pin" role="tab" aria-controls="pills-pin" aria-selected="false"><i class="fas fa-map-pin"></i></a>
+                    <span class="tabName">Delivery</span>
+                    <div class="shoppingCartPath"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="shoppingCartLink mx-auto disabled" id="pills-credit-card-tab" data-toggle="pill" href="#pills-credit-card" role="tab" aria-controls="pills-credit-card" aria-selected="false"><i class="far fa-credit-card"></i></a>
+                    <span class="tabName">Payment</span>
+                    <div class="shoppingCartPath"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="shoppingCartLink mx-auto disabled" id="pills-check-tab" data-toggle="pill" href="#pills-check" role="tab" aria-controls="pills-check" aria-selected="false"><i class="far fa-check-circle"></i></a>
+                    <span class="tabName">Confirmation</span>
+                    <div class="shoppingCartPath"></div>
+                </li>
+            </ul>
+
+            <div class="tab-content text-center col-lg-10 mx-auto my-5" id="pills-tabContent">
+                <div class="bag tab-pane fade show active pt-2" id="pills-bag" role="tabpanel" aria-labelledby="pills-bag-tab">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"><span class="cartHead">Product</span></th>
+                                <th scope="col"><span class="cartHead">Color</span></th>
+                                <th scope="col"><span class="cartHead">Size</span></th>
+                                <th scope="col"><span class="cartHead">Price</span></th>
+                                <th scope="col"><span class="cartHead">Amount</span></th>
+                                <th scope="col"><span class="cartHead">Cost</span></th>
+                                <th scope="col" class="cartDelete"><span class="cartHead deleteAll">Delete All</span></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="productImg float-left mr-4">
+                                            <img class="img-fluid" src="~/Images/@(item.Product.ProductName).png">
+                                        </div>
+                                        <div class="productText float-left">
+                                            <p>@(item.Product.ProductName)</p><br>
+                                            <span>@(item.Product.Category)</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="color">Black</span></td>
+                                    <td><span class="size">S</span></td>
+                                    <td>
+                                        <sup class="sheqel">&#8362;</sup><span class="price">@(item.Product.Price)</span>
+                                        <del class="oldPricePart"><sup class="sheqel">&#8362;</sup><span class="oldPrice">@(item.Product.Price + item.Product.Price * .25)</span></del>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="decrease btn"><i class="fas fa-minus"></i></button>
+                                            <input type="number" class="quantity" name="quantity" min="1" max="10000" value="2" disabled>
+                                            <button type="button" class="increase btn"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <sup class="sheqel">&#8362;</sup><span class="cost"></span>
+                                    </td>
+                                    <td class="exitBtn">
+                                        <button type="button" class="exit btn"><i class="fas fa-times"></i></button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="cartEmpty col pt-5 mt-4 mb-5 d-none">
+                        <h3>your cart is empty</h3>
+                    </div>
+                    <div class="col pt-5 d-flex justify-content-between">
+                        <a class="cartLink continue-shopping" href="~/">Continue Shopping</a>
+                        <div class="my-auto">
+                            <span class="total">Total: &nbsp;&nbsp;</span>
+                            <sup class="sheqel">&#8362;</sup><span class="totalPrice"></span>
+                        </div>
+                        <a class="btn cartLink next-step-cart" href="#mainSection">Next Step &nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pin tab-pane fade pt-4" id="pills-pin" role="tabpanel" aria-labelledby="pills-pin-tab">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" name="firstName" class="form-control" id="firstName" value="@myuser.FirstN">
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" value="@myuser.LastN">
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="phoneNumber">Phone number</label>
+                                <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" value="@myuser.PhoneNumber">
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="theEmail">Email</label>
+                                <input type="email" name="theEmail" class="form-control" id="theEmail" value="@myuser.Email">
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="inputCountry">Country</label>
+                                <select name="inputCountry" id="inputCountry" class="form-control">
+                                    <option value="palestine">@myuser.Country</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="inputCity">City</label>
+                                <select name="inputCity" id="inputCity" class="form-control">
+                                    <option value="gaza">@myuser.City</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6 text-left px-3">
+                                <label for="textareaAddress">Delivery address</label>
+                                <textarea name="textareaAddress" class="form-control" id="textareaAddress" wrap="hard"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between px-2 mt-4">
+                        <a class="deliveryLink back-delivery ml-1" href="#mainSection"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp; Back</a>
+                        <a class="deliveryLink next-step-delivery mr-1" href="#mainSection">Next Step &nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="credit-card tab-pane fade pt-4" id="pills-credit-card" role="tabpanel" aria-labelledby="pills-credit-card-tab">
+                    <div class="px-5">
+                        <h3 class="col text-left">Cash payment</h3>
+                        <form action="">
+                            <div class="form-group col-6 text-left px-3 my-5">
+                                <label for="endDate">End date</label>
+                                <input type="month" name="endDate" class="form-control" id="endDate">
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-between px-3 mt-4">
+                            <a class="paymentLink back-payment" href="#mainSection"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp; Back</a>
+                            <a class="paymentLink next-step-payment" href="#mainSection">Next Step &nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="check tab-pane fade pt-4" id="pills-check" role="tabpanel" aria-labelledby="pills-check-tab">
+
+                    <div class="beforeConfirmation">
+                        <div class="d-flex">
+                            <div class="col-6 text-left">
+                                <h6 class="checkHeads mb-4">delivery</h6>
+                                <div class="d-flex">
+                                    <span class="deliveryIcon"><i class="fas fa-map-marker-alt"></i></span>
+                                    <span class="deliveryAddress">Komol Kuchkarov<br>Chilanzar26, d.25, kv.17,Tashkent,<br>100 131</span>
+                                </div>
+                            </div>
+                            <div class="col-6 text-left">
+                                <h6 class="checkHeads mb-4">cart</h6>
+                                <table class="table">
+                                    <tbody>
+                                        <!-- <tr>
+                                          <td>
+                                            <div class="productImg float-left mr-4">
+                                              <img class="img-fluid" src="../assets/img/bag.png">
+                                            </div>
+                                            <div class="productText float-left"><p>New Balance Men's Street Backpack</p><br>
+                                              <span>S-Black-2pcs</span>
+                                            </div>
+                                          </td>
+                                          <td><span class="cost"><sup class="sheqel">&#8362;</sup>970</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="productImg float-left mr-4">
+                                              <img class="img-fluid" src="../assets/img/scarve.png">
+                                            </div>
+                                            <div class="productText float-left"><p>Lyle & Scott Men's Short Sleeve Camo Pocket</p><br>
+                                              <span>XXL-White-1pcs</span>
+                                            </div>
+                                          </td>
+                                          <td><span class="cost"><sup class="sheqel">&#8362;</sup>76</span></td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center px-2 mt-4">
+                            <a class="confirmationLink back-confirmation ml-1" href="#mainSection"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp; Back</a>
+                            <div>
+                                <span class="total">Total: &nbsp;&nbsp;</span>
+                                <sup class="sheqel">&#8362;</sup><span class="totalPrice"></span>
+                            </div>
+                            <a class="confirmationLink confirm-order mr-1" href="~/Home/ConfirmOrder">Confirm Order</a>
+                        </div>
+
+                        <table class="d-none">
+                            <tbody class="addTableRow d-none">
+                                <tr>
+                                    <td>
+                                        <div class="productImg float-left mr-4">
+                                            <img class="img-fluid" src="">
+                                        </div>
+                                        <div class="productText float-left">
+                                            <p></p><br>
+                                            <span class="allDetails">S-Black-2pcs</span>
+                                        </div>
+                                    </td>
+                                    <td><sup class="sheqel">&#8362;</sup><span class="cost"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="afterConfirmation d-none">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="confirmationIcon col-12 text-success mb-4"><i class="far fa-check-circle"></i></div>
+                            <div class="confirmationText col-12 text-center">
+                                <h3 class="mx-auto">Congratulations.<br>Your order is accepted.</h3>
+                                <p class="mx-auto my-4">Let me be clear. Not even close. We did not go by choice, we went because of necessity.</p>
+                            </div>
+                            <div class="mt-5">
+                                <a class="confirmationLink track-order" href="~/">continue shopping</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main section end -->
+
+@section Scripts {
+    @Scripts.Render("~/assets/js/shoppingCart.js")
+}

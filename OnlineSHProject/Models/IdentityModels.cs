@@ -66,6 +66,8 @@ namespace OnlineSHProject.Models
 
         public System.Data.Entity.DbSet<OnlineSHProject.Models.ProductsCart> Cart { get; set; }
 
+        public System.Data.Entity.DbSet<OnlineSHProject.Models.Order> Orders { get; set; }
+
         public System.Data.Entity.DbSet<OnlineSHProject.Models.ProductsHistory> History { get; set; }
 
         public System.Data.Entity.DbSet<Notification> Notifications { get; set; }

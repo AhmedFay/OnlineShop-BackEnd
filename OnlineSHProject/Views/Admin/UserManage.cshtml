@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "UserManage";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutShopOwner.cshtml";
 }
 
 <h2>UserManage</h2>
@@ -46,9 +46,9 @@
                 @Html.DisplayFor(modelItem => item.UserName)
             </td>
             <td>
-                @Html.ActionLink("Approve", "", new { id = item.Id }) |
-                @Html.ActionLink("Reject", "", new { id = item.Id }) |
-                @Html.ActionLink("Details", "", new { id = item.Id })
+                @Html.ActionLink("Approve", "#", new { id = item.Id }) |
+                @Html.ActionLink("Reject", "#", new { id = item.Id }) |
+                @Html.ActionLink("Details", "#", new { id = item.Id })
             </td>
         </tr>
     }

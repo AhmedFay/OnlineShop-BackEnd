@@ -1,10 +1,12 @@
 ﻿using OnlineSHProject.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 
 namespace OnlineSHProject.Controllers
 {
@@ -91,13 +93,54 @@ namespace OnlineSHProject.Controllers
                 return HttpNotFound();
             }
 
+            var userid = User.Identity.GetUserId();
+            var user = db.Users.Find(userid);
+
             var c = new ProductsCart()
             {
                 Product = products,
+                User = user
             };
 
             db.Cart.Add(c);
-            return View(products);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [Authorize]
+        public ActionResult ShowCart()
+        {
+            var userid = User.Identity.GetUserId();
+            var user = db.Users.Find(userid);
+            ViewBag.myuser = user;
+
+
+            var myCarts = db.Cart.Where(c => c.User.Id == userid).Include(u => u.Product).ToList();
+
+            return View(myCarts);
+        }
+
+        [Authorize]
+        public ActionResult ConfirmOrder()
+        {
+            var userid = User.Identity.GetUserId();
+            var user = db.Users.Find(userid);
+
+            var myCarts = db.Cart.Where(c => c.User.Id == userid).ToList();
+
+            foreach (var cart in myCarts)
+            {
+                var c = new Order()
+                {
+                    Product = cart.Product,
+                    User = user
+                };
+                db.Orders.Add(c);
+            }
+
+            db.SaveChanges();
+
+            return View();
         }
 
 

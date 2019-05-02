@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 using OnlineSHProject.Models;
 
 namespace OnlineSHProject.Controllers
@@ -16,16 +17,13 @@ namespace OnlineSHProject.Controllers
     // [Authorize (Roles = "Admin, ShopOwner")]
     public class ProductsController : Controller
     {
-        public static int Id = 2;
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Products
         public ActionResult Index()
         {
             return View(db.Products.ToList());
         }
 
-        // GET: Products/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -40,30 +38,12 @@ namespace OnlineSHProject.Controllers
             return View(products);
         }
 
-        public ActionResult DetailsTest(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Products products = db.Products.Find(id);
-            if (products == null)
-            {
-                return HttpNotFound();
-            }
-            return View(products);
-        }
-
-        // GET: Products/Create
         public ActionResult Create()
         {
 
             return View();
         }
 
-        // POST: Products/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,ProductName,Price,Amount,Category,Availability,ProductCode, Description, ExpireDate")] Products products, HttpPostedFileBase img)
@@ -80,6 +60,10 @@ namespace OnlineSHProject.Controllers
                 var path = Server.MapPath($"~/Images/{products.ProductName}{ext}");
                 img.SaveAs(path);
 
+                var userid = User.Identity.GetUserId();
+                var user = db.Users.Find(userid);
+
+                products.ShopOwner = user;
                 products.Date = DateTime.Now;
                 products.ImagePath = path;
                 db.Products.Add(products);
@@ -91,7 +75,6 @@ namespace OnlineSHProject.Controllers
             return View(products);
         }
 
-        // GET: Products/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -106,9 +89,6 @@ namespace OnlineSHProject.Controllers
             return View(products);
         }
 
-        // POST: Products/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,ProductName,Price,Amount,Category,Availability,ProductCode, Description, ExpireDate")] Products products)
@@ -122,7 +102,6 @@ namespace OnlineSHProject.Controllers
             return View(products);
         }
 
-        // GET: Products/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -137,7 +116,6 @@ namespace OnlineSHProject.Controllers
             return View(products);
         }
 
-        // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
@@ -147,6 +125,21 @@ namespace OnlineSHProject.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult ShowOrders()
+        {
+            var userid = User.Identity.GetUserId();
+            var user = db.Users.Find(userid);
+
+
+            var myOrder = db.Orders.Where(o => o.Product.ShopOwner.Id == userid).ToList();
+
+            return View(myOrder);
+        }
+
+
+
+
 
         protected override void Dispose(bool disposing)
         {

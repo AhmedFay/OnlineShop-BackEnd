@@ -31,14 +31,15 @@ namespace OnlineSHProject.Models
         public List<Attributes> Attributes { get; set; }
         public List<Vote> Vote { get; set; }
         public string ImagePath { get; set; }
+
+        public ApplicationUser ShopOwner { get; set; }
+
         //= new List<Attributes>
         //{
         //    new Attributes(0,"Size","S,M,L,Xl",this),
         //    new Attributes(1,"Color", "Red, Yellow, Black, White,Brown"),
         //    new Attributes(2,"Ctatagories", "Select Ctatagories, Women, Men, Kids, Accessories, Food"),
         //    new Attributes (3,"Availability","Available, UnAvailable"),
-
-
         //};
 
 

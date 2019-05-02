@@ -194,6 +194,14 @@
     <Compile Include="Migrations\201904300809316_aaa.Designer.cs">
       <DependentUpon>201904300809316_aaa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905020520138_aa1.cs" />
+    <Compile Include="Migrations\201905020520138_aa1.Designer.cs">
+      <DependentUpon>201905020520138_aa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905020658579_aa2.cs" />
+    <Compile Include="Migrations\201905020658579_aa2.Designer.cs">
+      <DependentUpon>201905020658579_aa2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attributes.cs" />
@@ -202,6 +210,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\NotificationVM.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Models\ProductsCart.cs" />
     <Compile Include="Models\ProductsHistory.cs" />
@@ -328,6 +337,7 @@
     <Content Include="assets\app\media\img\users\user3.jpg" />
     <Content Include="assets\app\media\img\users\user4.jpg" />
     <Content Include="assets\app\media\img\users\user5.jpg" />
+    <Content Include="assets\css\shopowner.css" />
     <Content Include="assets\demo\default\base\scripts.bundle.js" />
     <Content Include="assets\demo\default\base\style.bundle.css" />
     <Content Include="assets\demo\default\base\style.bundle.rtl.css" />
@@ -438,6 +448,7 @@
     <Content Include="assets\demo\default\media\img\misc\notification_bg.jpg" />
     <Content Include="assets\demo\default\media\img\misc\quick_actions_bg.jpg" />
     <Content Include="assets\demo\default\media\img\misc\user_profile_bg.jpg" />
+    <Content Include="assets\js\shopowner.js" />
     <Content Include="assets\snippets\apps\mail\mail.js" />
     <Content Include="assets\snippets\custom\apps\mail\mail.js" />
     <Content Include="assets\snippets\custom\pages\user\login.js" />
@@ -621,6 +632,10 @@
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Shared\_HomeLayout.cshtml" />
+    <Content Include="Views\Shared\_LayoutShopOwner.cshtml" />
+    <Content Include="Views\Home\ShowCart.cshtml" />
+    <Content Include="Views\Products\ShowOrders.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -649,6 +664,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904300809316_aaa.resx">
       <DependentUpon>201904300809316_aaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905020520138_aa1.resx">
+      <DependentUpon>201905020520138_aa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905020658579_aa2.resx">
+      <DependentUpon>201905020658579_aa2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

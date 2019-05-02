@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/shopowner.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Shop Owner</title>
+</head>
+<body>
+    <!-- main section start -->
+    <div class="container-fluid mainSection">
+        <div class="row pt-5">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" href="~/Products/Create">Add Product</a>
+                    <a class="nav-link" href="~/Admin/UserManage">ِShop Owners Requests</a>
+                    <a class="nav-link" href="~/Admin">Manage Customers</a>
+                    <a class="nav-link" href="~/Admin">Manage Shop Owners</a>
+                    <a class="nav-link" href="~/Products">Manage Products</a>
+                    <a class="nav-link" href="~/Products/ShowOrders">Manage Orders</a>
+                    <a class="nav-link" href="~/Manage/SendNotification">Send Notification</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main section end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/assets/js/jquery3.3.1.js"></script>
+    <script src="~/assets/js/popper.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/shopowner.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
